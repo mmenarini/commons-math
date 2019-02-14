@@ -13,4 +13,8 @@ target
 *.ipr
 *.iws
 .idea
+.gradle
+gradle-app.setting
+!gradle-wrapper.jar
+.gradletasknamecache
 *~
