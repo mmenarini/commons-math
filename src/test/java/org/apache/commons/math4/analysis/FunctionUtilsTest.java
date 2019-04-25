@@ -47,6 +47,7 @@ import org.junit.Test;
  * Test for {@link FunctionUtils}.
  */
 public class FunctionUtilsTest {
+public final int TMP = 10;
     private final double EPS = FastMath.ulp(1d);
 
     @Test

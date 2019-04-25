@@ -79,6 +79,19 @@ public class MathArraysTest {
     public void testEbeAddPrecondition() {
         MathArrays.ebeAdd(new double[3], new double[4]);
     }
+
+    // added testAbs to verify method added abs in MathArrays
+    @Test
+    public void testAbs() {
+        final double[] test = new double[]{-2.5, -1, 0, 1, 2.5};
+        final double[] abs = MathArrays.abs(test);
+        final double[] correctAbs = new double[]{2.5, 1, 0, 1, 2.5};
+        // Test abs values
+        for (int i = 0; i < test.length; i++) {
+            Assert.assertEquals(correctAbs[i], abs[i], 0);
+        }
+    }
+
     @Test(expected=DimensionMismatchException.class)
     public void testEbeSubtractPrecondition() {
         MathArrays.ebeSubtract(new double[3], new double[4]);
